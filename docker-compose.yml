@@ -1,0 +1,24 @@
+version: '3'
+services:
+  nginx:
+    image: javarouka/nginx-starter
+    ports:
+      - 80:80
+    # volumes:
+    #   - ./proxy/nginx.conf:/etc/nginx/nginx.conf
+  front:
+    image: javarouka/next-starter
+    # links:
+      # - backend:backend
+    ports:
+      - 3000:3000
+  # backend:
+    # image: javarouka/spring-starter
+    # links:
+    #   - front:front
+    # ports:
+    #   - 10001:10001
+    #   - 11619:11619
+    # volumes:
+    #   - ./source:/source
+    #   - ./nginx/default.conf:/etc/nginx/conf.d/default.conf

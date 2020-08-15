@@ -1,0 +1,8 @@
+node_modules
+.env
+build
+yarn-error.log
+coverage
+!rest
+env
+.next
