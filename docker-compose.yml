@@ -11,7 +11,7 @@ services:
     # links:
       # - backend:backend
     ports:
-      - 3000:3000
+      - 1980:1980
   # backend:
     # image: javarouka/spring-starter
     # links:
